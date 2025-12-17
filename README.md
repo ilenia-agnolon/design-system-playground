@@ -1,73 +1,17 @@
-# React + TypeScript + Vite
+# design-system-playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🇬🇧 Project Overview
 
-Currently, two official plugins are available:
+This project is a small Design System playground built with React and TypeScript, using Storybook as the primary environment for development and documentation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The objective is to practice building UI components in isolation, starting from design tokens such as colors, spacing, and typography, and then implementing simple, well-structured components like Badge and Button. The focus is on clarity, consistency, and predictable component APIs.
 
-## React Compiler
+The setup uses Vite for the build process, CSS Modules for component-level styling, and Storybook Autodocs to document components and related design decisions. Storybook runs as the main workspace on port 6006, without relying on a separate React application during development.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🇮🇹 Descrizione del Progetto
 
-## Expanding the ESLint configuration
+Questo progetto è un piccolo playground di Design System sviluppato con React e TypeScript, utilizzando Storybook come ambiente principale di sviluppo e documentazione.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+L’obiettivo è esercitarsi nella creazione di componenti UI in isolamento, partendo dai design token come colori, spaziatura e tipografia, per poi implementare componenti semplici e ben strutturati come Badge e Button. L’attenzione è rivolta a chiarezza, consistenza e API prevedibili.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Il progetto utilizza Vite per la configurazione di build, CSS Modules per lo styling dei componenti e Storybook Autodocs per documentare componenti e scelte di design. Storybook viene usato come workspace principale sulla porta 6006, senza dipendere da una React App separata durante lo sviluppo.
