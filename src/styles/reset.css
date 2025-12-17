@@ -1,0 +1,19 @@
+/* This file is used for resetting default browser styles.
+   Browsers apply different default margins, box models and behaviors.
+   A reset ensures a predictable and consistent baseline for all components. */
+
+*,
+*::before,
+*::after {
+  /* Ensures padding and border are included in element size calculations */
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  /* Removes default margins that vary between browsers */
+  margin: 0;
+}

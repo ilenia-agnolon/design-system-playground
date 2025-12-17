@@ -1,0 +1,25 @@
+/* This file is used for global design tokens.
+   Tokens are shared values (spacing, colors, typography) that keep UI consistent.
+   Instead of hardcoding values in every component, we reference these variables. */
+
+:root {
+  /* Spacing scale (8px base).
+     We keep a small step (4px) for tiny gaps and a consistent scale for layouts. */
+  --spacing-xs: 4px; /* Extra small spacing: useful for small gaps (icons, tight UI) */
+  --spacing-sm: 8px; /* Small spacing: default small padding/gap */
+  --spacing-md: 16px; /* Medium spacing: common layout padding */
+  --spacing-lg: 24px; /* Large spacing: section spacing */
+
+  /* Font sizes.
+     Using rem makes typography scale better with user settings (accessibility). */
+  --font-size-sm: 0.875rem; /* 14px if base is 16px */
+  --font-size-md: 1rem; /* 16px base size */
+  --font-size-lg: 1.25rem; /* 20px for titles/large text */
+
+  /* Semantic colors.
+     Components should use semantic tokens (neutral/positive/negative)
+     instead of raw HEX values, so we can change theme in one place later. */
+  --color-neutral: #6b7280; /* Gray for neutral UI */
+  --color-positive: #16a34a; /* Green for success/positive */
+  --color-negative: #dc2626; /* Red for error/negative */
+}

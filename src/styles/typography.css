@@ -1,0 +1,14 @@
+/* This file is used for global typography rules.
+   It defines the default font family, base font size and line height
+   for the entire design system. */
+
+body {
+  /* System font stack for good performance and native look */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Base font size taken from design tokens */
+  font-size: var(--font-size-md);
+
+  /* Line height chosen for good readability across components */
+  line-height: 1.5;
+}
