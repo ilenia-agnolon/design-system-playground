@@ -1,3 +1,7 @@
+// Storybook type helpers.
+// - Meta describes the story configuration (title, component, docs)
+// - StoryObj is used to type individual stories
+// Imported as `type` to avoid adding runtime code.
 import type { Meta, StoryObj } from "@storybook/react";
 
 /*
@@ -17,6 +21,9 @@ const meta: Meta = {
 
 export default meta;
 
+// Generic Storybook story type.
+// Used when the story is not linked to a specific React component,
+// but only renders static or exploratory markup (e.g. foundations previews).
 type Story = StoryObj;
 
 export const Preview: Story = {

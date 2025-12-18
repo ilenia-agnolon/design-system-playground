@@ -1,4 +1,8 @@
+// Import Storybook types only.
+// These are used for TypeScript type-checking and editor support,
+// and are not included in the final JavaScript bundle.
 import type { Meta, StoryObj } from "@storybook/react";
+
 import { Button } from "../components/Button/Button";
 
 /*
