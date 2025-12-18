@@ -13,17 +13,17 @@ export default meta;
 
 type Story = StoryObj;
 
-export const Preview: Story = {
-  render: () => {
-    return (
-      <div style={{ padding: 16 }}>
-        {/* This is a quick visual smoke test to confirm Storybook renders React/TS */}
-        <h1 style={{ marginBottom: 8 }}>Storybook is running ✅</h1>
-        <p>
-          This story will later be used to verify global styles (reset, tokens,
-          typography) imported in preview.ts.
-        </p>
-      </div>
-    );
-  },
-};
+// export const Preview: Story = {
+//   render: () => {
+//     return (
+//       <div style={{ padding: 16 }}>
+//         {/* This is a quick visual smoke test to confirm Storybook renders React/TS */}
+//         <h1 style={{ marginBottom: 8 }}>Storybook is running ✅</h1>
+//         <p>
+//           This story will later be used to verify global styles (reset, tokens,
+//           typography) imported in preview.ts.
+//         </p>
+//       </div>
+//     );
+//   },
+// };
