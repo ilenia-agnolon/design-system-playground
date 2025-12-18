@@ -20,7 +20,7 @@
      Components should use semantic tokens (neutral/positive/negative)
      instead of raw HEX values, so we can change theme in one place later. */
   --color-neutral: #6b7280; /* Gray for neutral UI */
-  --color-positive: #16a34a; /* Green for success/positive */
+  --color-positive: #15803d; /* Green for success/positive */
   --color-negative: #dc2626; /* Red for error/negative */
 
   /* Text colors (WCAG-aware).
