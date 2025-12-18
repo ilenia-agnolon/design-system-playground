@@ -22,4 +22,10 @@
   --color-neutral: #6b7280; /* Gray for neutral UI */
   --color-positive: #16a34a; /* Green for success/positive */
   --color-negative: #dc2626; /* Red for error/negative */
+
+  /* Text colors (WCAG-aware).
+     These tokens are meant for text on light backgrounds. */
+  --color-text-neutral: #374151; /* Dark gray for readable body text */
+  --color-text-positive: #166534; /* Dark green for accessible success text */
+  --color-text-negative: #991b1b; /* Dark red for accessible error text */
 }

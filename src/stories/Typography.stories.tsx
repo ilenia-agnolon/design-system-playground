@@ -52,15 +52,15 @@ export const Preview: Story = {
         {/* Semantic color samples */}
         <h2 style={{ marginBottom: 8 }}>Semantic text colors</h2>
 
-        <p style={{ marginBottom: 8, color: "var(--color-neutral)" }}>
+        <p style={{ marginBottom: 8, color: "var(--color-text-neutral)" }}>
           Neutral — used for secondary information.
         </p>
 
-        <p style={{ marginBottom: 8, color: "var(--color-positive)" }}>
+        <p style={{ marginBottom: 8, color: "var(--color-text-positive)" }}>
           Positive — used for success messages.
         </p>
 
-        <p style={{ marginBottom: 8, color: "var(--color-negative)" }}>
+        <p style={{ marginBottom: 8, color: "var(--color-text-negative)" }}>
           Negative — used for errors or destructive actions.
         </p>
       </div>
