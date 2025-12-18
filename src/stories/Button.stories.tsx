@@ -32,7 +32,7 @@ type Story = StoryObj<typeof Button>;
 export const Default: Story = {
   args: {
     // Text rendered inside the button
-    children: "Button",
+    children: "Submit",
 
     // Default visual variant
     variant: "primary",
